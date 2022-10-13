@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
 </head>
 
 <body>
+    <div class="main-container">
+        <div class="container-one">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to visit my profile</p>
 
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for taking the time to visit my profile</p>
-
-    <form id="survey-form">
-        <label id="name-label">Name
-            <input id="name" type="text" required placeholder="Enter your name"></label>
-        <label id="email-label">Email
-            <input id="email" type="email" required placeholder="Enter your Email"></label>
-        <label id="number-label">Age (optional)<input id="number" type="number" min="10" max="99"
-                placeholder="Enter your age"></label>
-        <p>Which option best describes your current role?</p>
-        <select id="dropdown">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-        </select>
+            <form id="survey-form">
+                <label id="name-label">Name
+                    <input id="name" type="text" required placeholder="Enter your name"></label>
+                <label id="email-label">Email
+                    <input id="email" type="email" required placeholder="Enter your Email"></label>
+                <label id="number-label">Age (optional)<input id="number" type="number" min="10" max="99"
+                        placeholder="Enter your age"></label>
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+        </div>
         <p>Would you recommend this form to a friend?</p>
         <input type="radio" name="recommend" id="definitely" value="definitely">
         <label for="definitely">Definitely</label>
@@ -45,7 +48,8 @@
         <p>Any comments or suggestions?</p>
         <textarea rows="6" cols="40"></textarea>
         <button id="submit">Submit</button>
-    </form>
+        </form>
+    </div>
 
 </body>
 
